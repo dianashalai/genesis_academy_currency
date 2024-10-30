@@ -1,13 +1,10 @@
-Привіт, це мій перший проект на PHP з використанням фреймворку Laravel. 
+Hello, this is my first project in PHP using the Laravel framework.
 
-Сервіс реалізований з АРІ, який дозволяє
- • дізнатись поточний курс долара (USD) у гривні (UAH);
- • підписати емейл на отримання інформації по зміні курсу;
- • емейли з актуальним курсом мають приходити всім підписаним користувачам один раз на добу;
- • + кастомно, коли виконується підписка емейлу можна обрати з якої на яку валюту отримувати інформацію по зміні курсу.
+The service is implemented with an API that allows you to:
 
-Використовуйте 
-./vendor/bin/sail up 
-для запуску проекту та
-./vendor/bin/sail artisan schedule:work 
-для запуску відправки щоденного емейлу. 
+- check the current USD to UAH exchange rate;
+- subscribe an email to receive updates on exchange rate changes;
+- send daily emails with the current exchange rate to all subscribed users;
+- additionally, when subscribing an email, you can choose the currency pair for receiving exchange rate updates.
+
+Use ./vendor/bin/sail up to start the project and ./vendor/bin/sail artisan schedule:work to initiate the daily email dispatch.
